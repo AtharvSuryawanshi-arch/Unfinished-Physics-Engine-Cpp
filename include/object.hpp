@@ -5,9 +5,8 @@
 
 uint OBJECT_ID = 0;
 
-class object_compare
+struct object_compare
 {
-public:
     bool   comparison;
 };
 
@@ -21,6 +20,8 @@ public:
     
     float               angular_velocity;
     float               e; //coeficient of restitution
+    float               density;
+    float               area; // TO-DO Later
 
     inline line edge( size_t n );
     
